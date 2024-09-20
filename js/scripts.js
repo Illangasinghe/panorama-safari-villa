@@ -6,3 +6,14 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+// Set current year in the footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Toggle mobile menu
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+});
