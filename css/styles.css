@@ -1,0 +1,218 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: #fff;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .nav-links a:hover {
+    color: #f4b41a;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #f4b41a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.hero .btn:hover {
+    background: #e0a30a;
+}
+
+/* Sections */
+section {
+    padding: 2em 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Safari Grid */
+.safari-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.safari-item {
+    flex: 1 1 calc(33% - 1em);
+    margin: 0.5em;
+    text-align: center;
+}
+
+.safari-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.safari-item h3 {
+    margin-top: 0.5em;
+}
+
+.safari-item p {
+    font-size: 0.9em;
+}
+
+/* Accommodation Section */
+#accommodation img {
+    display: block;
+    max-width: 100%;
+    margin: 1em auto;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.7em;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #f4b41a;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+}
+
+footer .social-links li {
+    margin-left: 10px;
+}
+
+footer .social-links a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    nav .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .safari-grid {
+        flex-direction: column;
+    }
+
+    .safari-item {
+        flex: 1 1 100%;
+        margin: 1em 0;
+    }
+}
